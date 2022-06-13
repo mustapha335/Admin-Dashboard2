@@ -14,7 +14,7 @@ const Featured = () => {
       </div>
       <div className="bottom">
         <div className="featuredChart">
-          <CircularProgressbar value={70} text={`${percentage}%`} strokeWidth={5}/>
+          <CircularProgressbar value={percentage} text={`${percentage}%`} strokeWidth={5}/>
         </div>
         <p className="title">Total Sales made today</p>
         <p className="amount">£420</p>
@@ -50,6 +50,6 @@ const Featured = () => {
       </div>
     </div>
   )
-}
+}   
 
 export default Featured
