@@ -3,6 +3,7 @@ import React from 'react'
 import Sidebar from '../../components/siderbar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
 import "./home.scss"
+import Widgets from '../../components/widget/Widget';
 
 const Home = () => {
   return (
@@ -10,7 +11,12 @@ const Home = () => {
       <Sidebar />
      <div className="homeContainer">
         <Navbar />
-        home container
+        <div className="widgets">
+          <Widgets type="user" />
+          <Widgets type="order" />
+          <Widgets type="earnings" />
+          <Widgets type="balance" />
+        </div>
      </div>
     </div>
   )
