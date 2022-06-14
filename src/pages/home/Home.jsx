@@ -1,38 +1,36 @@
-import React from 'react'
+import React from "react";
 
-import Sidebar from '../../components/siderbar/Sidebar';
-import Navbar from '../../components/navbar/Navbar';
-import "./home.scss"
-import Widgets from '../../components/widget/Widget';
-import Featured from "../../components/featured/Featured"
-import Chart from "../../components/chart/Chart"
-import Table from '../../components/table/Table';
+import Sidebar from "../../components/sidebar/Sidebar";
+import Navbar from "../../components/navbar/Navbar";
+import "./home.scss";
+import Widgets from "../../components/widget/Widget";
+import Featured from "../../components/featured/Featured";
+import Chart from "../../components/chart/Chart";
+import Table from "../../components/table/Table";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className='home'>
       <Sidebar />
-     <div className="homeContainer">
+      <div className='homeContainer'>
         <Navbar />
-        <div className="widgets">
-          <Widgets type="user" />
-          <Widgets type="order" />
-          <Widgets type="earnings" />
-          <Widgets type="balance" />
+        <div className='widgets'>
+          <Widgets type='user' />
+          <Widgets type='order' />
+          <Widgets type='earnings' />
+          <Widgets type='balance' />
         </div>
-        <div className="charts">
+        <div className='charts'>
           <Featured />
           <Chart />
         </div>
-        <div className="listContainer">
-          <div className="listTitle">Latest Transaction</div>
+        <div className='listContainer'>
+          <div className='listTitle'>Latest Transaction</div>
           <Table />
         </div>
-     </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
-
- 
+export default Home;
